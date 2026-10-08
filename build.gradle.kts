@@ -14,6 +14,8 @@ group = "com.center"
 version = "1.0.0"
 
 dependencies {
+    implementation(project(":common"))
+
     testImplementation(libs.junit.jupiter)
     testRuntimeOnly(libs.junit.platform.launcher)
 
@@ -30,5 +32,5 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = "com.center.lowpressure.App"
+    mainClass = "com.center.whirlwind.App"
 }
